@@ -17,7 +17,12 @@
     justify-content: center;
     color: #93f893;
 }
-
+.h3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    justify-content: center;
+    color: #247224;
+}
 p.text {
     font-family: 'Segoe UI';
     text-align: center;
@@ -25,9 +30,21 @@ p.text {
     color: #383333;
 }
 
+li.IPtext {
+    font-family: 'Segoe UI';
+    text-align: center;
+    justify-content: center;
+    color: #158660;
+}
+
+img.img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+}
 background {
-    background-color: #ff0000;
-    gradient: linear-gradient(to right, #00d9ff, #ff0000);
+    background-color: inear-gradient(to right, #00d9ff, #ff0000);
+    display: flex;
 }
 
 

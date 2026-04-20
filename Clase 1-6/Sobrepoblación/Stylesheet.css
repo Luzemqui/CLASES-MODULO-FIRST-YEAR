@@ -1,0 +1,39 @@
+.h1 {
+    color: #8b9df1;
+    text-align: center;
+    font-family: 'Times New Roman';
+    justify-content: center;
+}
+
+.h2 {
+    font-family: 'Segoe UI';
+    text-align: center;
+    justify-content: center;
+    color: #a7defd;
+}
+
+.h3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    justify-content: center;
+    color: #29849b;
+}
+
+p.text {
+    font-family: 'Segoe UI';
+    text-align: center;
+    justify-content: center;
+    color: #383333;
+}
+
+ul.IPtext {
+    font-family: 'Segoe UI';
+    text-align: center;
+    justify-content: center;
+}
+
+img.img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+}
