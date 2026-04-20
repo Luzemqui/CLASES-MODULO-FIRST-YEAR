@@ -1,0 +1,1 @@
+- [x] Step 1: Fix CSS link filename case from 'estilos.css' to 'Estilos.css'\n
