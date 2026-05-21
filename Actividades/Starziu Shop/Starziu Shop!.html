@@ -5,6 +5,7 @@
     <meta name="viewport" content="width.device-width, inital-scale-1.0">
     <title>Carrito de compras</title>
     <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="carrusel.css">
 
     <style>
             body{
@@ -89,13 +90,41 @@
     </header>
 
     <main>
+         <main>
+        <section class ="slider">
+            <div class = "slider-nav">
+                <a href="#imagen1">1</a>
+                <a href="#imagen2">2</a>
+                <a href="#imagen3">3</a>
+                <a href="#imagen4">4</a>
+             </div>
+
+             <!--IMAGENES-->
+             <div class = "slides">
+                <div id = "imagen 1 " class ="slides">
+                    <img src="Jumbo Fuwa Fuwa.jpg" alt = "imagen 1" >
+                </div>
+                <div id = "imagen 2 " class ="slides">
+                    <img src="Venti plush.jpg" alt = "imagen 2" >
+                </div>
+                <div id = "imagen 3 " class ="slides">
+                    <img src="Pexlaxy Kazuha Plush Plushie Kaedehara Anime Figure Stuffed Toy Doll Plushy Props for Fans,kazuha.jpg" alt = "imagen 3" >
+                </div>
+                <div id = "imagen 4 " class ="slides">
+                    <img src="Jeu Genshin Impact Furina Focalors peluche poupée peluche peluches habiller vêtements dessin animé.jpg" alt = "imagen 4" >
+                </div>
+             </div>
+        </section>
+    </main>
         <section class="products">
             <div class="product-card">
+                <img src="https://via.placeholder.com/150" alt="Laptop pro">
                 <h3>Laptop pro</h3>
                 <p>$1200</p>
                 <button class="add-btn" data-id="1" data-name="Laptop pro" data-price="1200">Añdir al carrito</button>
             </div>
             <div class="product-card">
+                <img src="https://via.placeholder.com/150" alt="Auriculares H1-F">
                 <h3>Auriculares H1-F!</h3>
                 <p>$150</p>
                 <button class="add-btn" data-id="2" data-name="Auriculares H1-F1" data-price="150">Añadir al carrito</button>
@@ -108,7 +137,7 @@
                 </ul>
             <div class="total-section">
                 <strong>Total :$<span id="total-price">0</span></strong>
-                <button id="clear-cart">Vaciar carrito :(</button>
+                <button id="clear-cart">Vaciar carrito</button>
             </div>
         </section>
     </main>
