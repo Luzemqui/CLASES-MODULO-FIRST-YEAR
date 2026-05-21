@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="carrusel.css">
+    <title>TIENDA STARZIU</title>
+</head>
+
+<body>
+    <!---ENCABEZADO-->
+    <header>
+        <div class = "header">
+            <h2>TIENDITA OLINE</h2>
+            <img src="LOGO.png" alt="Logo de la tienda" width="170" height="75"> 
+        </div>
+        <label for="menu">≡ Menú</label>
+            <input type="checkbox" id="menu">
+
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+
+        <nav>
+            <!--MENU DE OPCIONES-->
+        <style>
+            body{
+                margin: 0;
+                font-family: Arial;
+            }
+
+            nav {
+                background: #333;
+            }
+
+            ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+            }
+
+            li {
+                border-bottom: 1px solid #555;
+            }
+
+            a{
+                color: white;
+                text-decoration: none;
+                display: block;
+                padding: 10px;
+            }
+
+            menu {
+                display: none;
+            }
+
+            label {
+                color: white;
+                display: block;
+                padding: 10px;
+                cursor: pointer;
+                background: #333;
+            }
+
+            ul {
+                display: none;
+            }
+
+            #menu:checked + ul{
+                display: block;
+            }
+
+            @media (min-width: 768px) {
+
+                label {
+                    display: none;
+                }
+
+                ul {
+                    display: flex;
+                }
+
+                li {
+                    border: none;
+                }
+            }
+        </style>
+        </nav>
+    </header>
+
+
+    <!--CONTENIDO PRINCIPAL-->
+    <main>
+        <h1>CARRUSEL DE IMAGENES</h1>  
+        <section class ="slider">
+            <div class = "slider-nav">
+                <a href="#imagen1">1</a>
+                <a href="#imagen2">2</a>
+                <a href="#imagen3">3</a>
+                <a href="#imagen4">4</a>
+             </div>
+
+             <!--IMAGENES-->
+             <div class = "slides">
+                <div id = "imagen 1 " class ="slides">
+                    <img src="imagen.jpg" alt = "imagen 1" >
+                </div>
+                <div id = "imagen 2 " class ="slides">
+                    <img src="imagen.jpg" alt = "imagen 2" >
+                </div>
+                <div id = "imagen 3 " class ="slides">
+                    <img src="imagen.jpg" alt = "imagen 3" >
+                </div>
+                <div id = "imagen 4 " class ="slides">
+                    <img src="imagen.jpg" alt = "imagen 4" >
+                </div>
+             </div>
+        </section>
+    </main>
+
+    
+
+    <!--PIE DE PAGINA-->
+    <footer>
+        <div class = "footer">
+            <p>HECHO POR MANU!</p>
+        </div>
+    </footer>
+</body>

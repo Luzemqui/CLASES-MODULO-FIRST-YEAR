@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Menu basico</title>
+
+        <style>
+            body{
+                margin: 0;
+                font-family: Arial;
+            }
+
+            nav {
+                background: #333;
+            }
+
+            ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+            }
+
+            li {
+                border-bottom: 1px solid #555;
+            }
+
+            a{
+                color: white;
+                text-decoration: none;
+                display: block;
+                padding: 10px;
+            }
+
+            menu {
+                display: none;
+            }
+
+            label {
+                color: white;
+                display: block;
+                padding: 10px;
+                cursor: pointer;
+                background: #333;
+            }
+
+            ul {
+                display: none;
+            }
+
+            #menu:checked + ul{
+                display: block;
+            }
+
+            @media (min-width: 768px) {
+
+                label {
+                    display: none;
+                }
+
+                ul {
+                    display: flex;
+                }
+
+                li {
+                    border: none;
+                }
+            }
+        </style>
+    </head>
+        <nav>
+            <label for="menu">≡ Menú</label>
+            <input type="checkbox" id="menu">
+
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+</html>
