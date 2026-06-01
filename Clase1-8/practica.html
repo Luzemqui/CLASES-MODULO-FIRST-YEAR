@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica</title>
+    <link rel="stylesheet" href="estilo.css">
+    <title>Practica</title>
+</head>
+<body>
+    <div>
+        <h1>CRUD de register de usuario</h1>
+        <div class="form">
+            <form action="">
+            <label for="nombre">Nombre:</label><br><br>
+            <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" class="Name" required><br><br>
+            <label for="Apellidos">Apellidos</label> <br><br>
+            <input type="text" id="Apellidos" name="Apellidos" placeholder="Ingrese sus apellidos" class="Apellidos" required><br><br>
+            <div class ="submit-bttn">
+                <button type="submit">Enviar</button>
+            </div>
+            </form>
+        </div>
+
+        <div class="tabla">
+            <table border="2" class="tabla">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Apellidos</th>
+                    </tr>
+                </thead>
+                <tbody id="TablaUsuarios"></tbody>
+            </table>
+        </div>
+    </div>    
+</body>
+</html>
