@@ -5,11 +5,16 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: aqua;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(254, 255, 212);
     font-size: 20px;
     justify-content: center;
     text-align: center;
+}
+
+h1 {
+    font-size: 30px;
+    justify-content: center;
 }
 
 form {
@@ -20,6 +25,8 @@ form {
     border-radius: 10px;
     text-align: center;
     margin: 280px auto;
+    outline: none;
+    border: black 0.5px solid;
 }
 
 .submit-bttn {
@@ -41,11 +48,19 @@ form {
 }
 
 .submit-bttn button:hover {
-    background: #00aeff;
+    background: #4b2f0a;
     color: #fff;
-    border-color: #00aeff;
+    border-color: #4b2f0a;
 }
 
+.name-text{
+    background-color: #ffffff;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    border-radius: 18px;
+    outline: none;
+    border-radius: 15px ;
+}
 
 .Name {
     background: rgb(255, 255, 255);
@@ -58,8 +73,10 @@ form {
     font-size: 18px;
 }
 
-a:hover .Name {
-    border-color: #00aeff;
+.Name a:hover {
+    background: #4b2f0a;
+    color: #fff;
+    border-color: #4b2f0a;
 }
 
 .Apellidos {
@@ -73,5 +90,6 @@ a:hover .Name {
     font-size: 18px;
 }
 
-/* (repetido) .submit-bttn al final eliminado para evitar conflictos */
-
+a:hover .Apellidos {
+    border-color: #00aeff;
+}
