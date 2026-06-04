@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width. initial-scale-1.0">
+    <title>Documeny</title>
+    <link rel="stylesheet" href="../Animaciones_CSS/CSS/estilo.css">
+</head>
+
+<body>
+    <div class="tabla">
+        <table>
+
+            <tr>
+                <th class="th">Nombre</th>
+                <th class="th">Apellido</th>
+                <th class="th">Pais</th>
+                <th class="th">Numero de telefono</th>
+            </tr>
+            <tr>
+                <td class="td">Caleb</td>
+                <td class="td">Lopez</td>
+                <td class="td">El Salvador</td>
+                <td class="td">97745677</td>
+            </tr>
+            <tr>
+                <td class="td">Camila</td>
+                <td class="td">Lopez</td>
+                <td class="td">El Salvador</td>
+                <td class="td">55667889</td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <p>En este apartado encontraras texto de registro de usuario</p>
+    </div>
+    <div class="content">
+        <img src="Img/Chucho kawaii.webp" alt="" class=".img-neon">
+    </div>
+
+    <script>
+        const imgs=document.querySelectorAll(".img-neon");
+        window.addEventListener("scroll", ()=>{
+            imgs.forEach(img=>{
+                const top=img.getBoundingClientRect().top
+                if(top<window.innerHeight - 100) {
+                    img.classList.add("show")
+                }
+            })
+        })
+    </script>
+
+</body>
