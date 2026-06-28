@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Animación con CSS y JS</title>
+    <style>
+        .imagen {
+            width: 150px;
+            position: relative;
+            transition: all 1s ease; /* transición suave */
+        }
+        .mover {
+            transform: translateX(200px); /* mover a la derecha */
+        }
+        .agrandar {
+            transform: scale(1.5); /* agrandar */
+        }
+    </style>
+</head>
+<body>
+    <h2>Animación de Imagen</h2>
+    <img src="perrito.jpg" alt="Ejemplo" class="imagen" id="miImagen">
+
+    <script>
+        const img = document.getElementById("miImagen");
+
+        // Mover la imagen automáticamente después de 2 segundos
+        setTimeout(() => {
+            img.classList.add("mover");
+        }, 2000);
+
+        // Al hacer clic, agrandar la imagen
+        img.addEventListener("click", () => {
+            img.classList.toggle("agrandar");
+        });
+    </script>
+</body>
+</html>
+
+// Investigar una manera de como hacer que una imagen desaparezca y aparezca usando CSS y JavaScript //
