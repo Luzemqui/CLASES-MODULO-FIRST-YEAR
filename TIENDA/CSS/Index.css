@@ -74,6 +74,6 @@ h1 {
     height: 369px;        
     background-color: #ffffff;
     border-radius: 10px;
-    
-
+    border: 2px solid #333333;
+    transform: translate(0px, -10px);
 }
